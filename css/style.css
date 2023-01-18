@@ -752,6 +752,8 @@ body {
     cursor: pointer;
     border-color: var(--primary-brand-color-iris);
     box-shadow: 0 0 10px var(--primary-brand-color-iris);
+    transition: border-color var(--transition-time-and-cubic),
+                box-shadow var(--transition-time-and-cubic);
 }
 
 #callback-privacy:checked {
