@@ -732,6 +732,7 @@ body {
     -moz-appearance: none; 
 	-webkit-appearance: none; 
 	appearance: none;
+    outline: none;
 }
 
 #callback-privacy::before {
@@ -749,6 +750,7 @@ body {
     width: 16px;
     height: 16px;
     cursor: pointer;
+    border-color: var(--primary-brand-color-iris);
     box-shadow: 0 0 10px var(--primary-brand-color-iris);
 }
 
