@@ -679,7 +679,7 @@ body {
 .callback-textarea:focus {
     border: 1px solid var(--primary-brand-color-iris);
     color: var(--dark-navy-blue);
-    
+    outline: none;
 }
 
 .callback-input-text:focus + .callback-form-icon {
