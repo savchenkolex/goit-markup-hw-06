@@ -312,20 +312,68 @@
                     <use href="./images/icons.svg#icon-close-black-18dp" ></use>
                 </svg>                  
             </button>
-            <form action="`javascript:void(0);`">
-                <h2>Leave your contacts and we will call you back</h2>
-                <label for="id-name"></label>
-                <input type="text" id="id-name" class="callback-form-text">
-                <label for="id-tel"></label>
-                <input type="tel" id="id-tel" class="callback-form-text">
-                <label for="id-email"></label>
-                <input type="email" id="id-email" class="callback-form-text">
-                <label for="id-textarea"></label>
-                <input type="textarea" class="callback-form-textarea">
-                <p class="callback-privacy">I accept the terms and conditions of the <a href="#" class="callback-privacy-link">Privacy Policy</a></p>
-                
+              <!-- <h2 class="modal-header">Leave your contacts and we will call you back</h2> -->
+              <form class="callback-form" action="`javascript:void(0);`">
+                <fieldset class="callback-filds">
+                    <legend class="modal-header">Leave your contacts and we will call you back</legend>
+                    <label 
+                        for="id-name" 
+                        class="callback-label">
+                        <span class="text-label first-label">Name</span>
+                        <input 
+                          type="text" 
+                          id="id-name" 
+                          name="name"
+                          class="callback-input-text">
+                          <svg class="callback-form-icon">
+                            <use href="./images/icons.svg#person-black-18dp" ></use>
+                        </svg>
+                    </label>
+                    <label 
+                        for="id-tel" 
+                        class="callback-label">
+                        <span class="text-label">Phone</span>
+                        <input 
+                          type="tel" 
+                          id="id-tel" 
+                          name="phone_number"
+                          class="callback-input-text" 
+                          required>
+                          <svg class="callback-form-icon">
+                            <use href="./images/icons.svg#phone-black-18dp" ></use>
+                        </svg>
+                    </label>
+                    <label 
+                        for="id-email" 
+                        class="callback-label ">
+                        <span class="text-label">Email</span>
+                        <input 
+                        type="email" 
+                        id="id-email" 
+                        name="email"
+                        class="callback-input-text" 
+                        required>
+                        <svg class="callback-form-icon">
+                            <use href="./images/icons.svg#email-black-18dp" ></use>
+                        </svg>
+                    </label>
+                    <label 
+                        for="id-textarea" 
+                        class="callback-label textarea-label">
+                        <span class="text-label">Comment</span>
+                        <textarea  
+                        class="callback-textarea" 
+                        id="id-textarea"
+                        placeholder="Text input" 
+                        ></textarea>
+                    </label>
+                </fieldset>
+                <div class="privacy">
+                    <input type="checkbox" name="privacy" id="callback-privacy">
+                    <label for="callback-privacy" class="label-callback-privacy">I accept the terms and conditions of the <a href="#" class="callback-privacy-link">Privacy Policy</a></label>
+                </div>
                 <button type="button" class="callback-submit">Send</button>
-            </form>
+              </form>
         </div>
     </div>
     </main>
@@ -368,13 +416,15 @@
                     </li>
                 </ul>
             </div>
-            <div class="subscribe-form">
+            <div class="subscribe-form-wrapper">
                 <h2 class="header-footer">Subscribe</h2>
-                <form action="`javascript:void(0);`">
-                    <input type="text" name="subscribe-email" class="subscribe-email">
+                <form action="`javascript:void(0);`" class="subscribe-form">
+                    <input type="text" name="subscribe-email" class="subscribe-email" placeholder="E-mail">
                     <button class="subscribe-submit">
-                        Subscribe
-                        
+                        <span class="subscribe">Subscribe</span>
+                        <svg class="paper-plane">
+                            <use href="./images/icons.svg#paper-plane"></use>
+                        </svg>
                     </button>
                 </form>
             </div>
