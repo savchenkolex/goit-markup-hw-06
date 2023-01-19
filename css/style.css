@@ -595,7 +595,8 @@ body {
     transition: background-color var(--transition-time-and-cubic);
 }
 
-.btn-close:active {
+.btn-close:active,
+.btn-close:hover {
     background-color: var(--primary-brand-color-iris);
     
 }
@@ -604,11 +605,12 @@ body {
     fill: black;
     width: 8px;
     height: 8px;
+    transition: fill var(--transition-time-and-cubic);
 }
 
-.btn-close:active > .btn-close-sign {
+.btn-close:active > .btn-close-sign,
+.btn-close:hover > .btn-close-sign {
     fill: var(--cloud);
-    transition: fill var(--transition-time-and-cubic);
 }
 
 .modal-header {
@@ -650,12 +652,12 @@ body {
 
 
 .callback-form-icon {
-
     display: block;
     position:absolute;
     top: 50%;
     left: 16px;
-    width: 24px;
+    transform: translateY(-12%);
+    width: 18px;
     height: 24px;
     fill: var(--dark-navy-blue);
     transition: fill var(--transition-time-and-cubic);
@@ -728,6 +730,10 @@ body {
     margin-bottom: 24px; */
 }
 
+.callback-privacy-link {
+    color: var(--primary-brand-color-iris);
+}
+
 #callback-privacy {
     -moz-appearance: none; 
 	-webkit-appearance: none; 
@@ -783,7 +789,7 @@ body {
     margin-right: auto;
     margin-left: auto;
     transition: background-color var(--transition-time-and-cubic);
-
+    cursor: pointer;
 }
 
 .callback-submit:hover,
@@ -803,12 +809,13 @@ body {
 
 .dark-footer .container {
     display: flex;
-    gap: 120px;
+    /* gap: 120px; */
 }
 
 .footer-slogan {
     width: 264px;
     margin: 0;
+    margin-right: 120px;
 }
 
 .slogan-text {
@@ -856,15 +863,21 @@ body {
     fill: var(--cloud);
 }
 
+.subscribe-form-wrapper {
+    margin-left: auto;
+}
+
 .subscribe-form {
     display: flex;
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
     gap: 24px;
 }
 
 .subscribe-email {
     color: #FFFFFF4D;
     background-color: var(--dark-navy-blue);
+    width: 264px;
+    /* height: 40px; */
     border: 1px solid #FFFFFF4D;
     border-radius: 4px;
     padding: 8px 16px;
@@ -887,13 +900,13 @@ body {
     border: none;
     border-radius: 4px;
     display: flex;
-    flex-wrap: nowrap;
+    justify-content: center;
     align-items: center;
     gap: 8px;
     padding: 8px 24px;
-
+    width: 165px;
     transition: background-color var(--transition-time-and-cubic);
-
+    cursor: pointer;
 }
 
 .subscribe-submit:hover,
@@ -901,9 +914,9 @@ body {
     background-color: var(--button-dark-blue);
 }
 
-.subscribe {
+/* .subscribe {
     display: block;
-}
+} */
 
 .paper-plane {
     width: 24px;
